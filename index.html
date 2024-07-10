@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>week 10 lab</title>
+    </head>
+    <body>
+        <header>
+            <h1>week 10 lab</h1>
+        </header>
+        <main >
+        <div id="app">
+            <input type="text" v-model="firstName" placeholder="First Name">
+            <input type="text" v-model="lastName" placeholder="Last Name">
+            <p> Full Name:{{fullName}}</p>
+            <p>quantity: <input type="number" v-model="quantity" min="0"></p>
+            <p>Price per item: {{pricePerItem}}$</p>
+            <p>Total price: {{totalPrice}}$</p>
+            <button @click="clearFeilds">clearFeilds</button>
+        </div>
+        </main>
+        <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+        <script src="scripts/app.js"></script>
+        <footer>
+            &copy; Teshma 2024
+        </footer>
+        
+    </body>
+</html>
